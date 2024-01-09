@@ -1,2 +1,3 @@
 # Dots
-Use whatever you want. This is mainly for me to keep configs consistent accross my OSs.
+Use whatever you want.
+Has my configs and stuff.
