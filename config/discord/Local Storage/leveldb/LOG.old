@@ -1,0 +1,11 @@
+2024/01/08-16:12:05.450 601 Reusing MANIFEST /home/glandry/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2024/01/08-16:12:05.450 601 Recovering log #57
+2024/01/08-16:12:05.484 601 Level-0 table #63: started
+2024/01/08-16:12:05.524 601 Level-0 table #63: 2748471 bytes OK
+2024/01/08-16:12:05.530 601 Delete type=0 #57
+2024/01/08-16:15:46.349 602 Level-0 table #66: started
+2024/01/08-16:15:46.394 602 Level-0 table #66: 2778608 bytes OK
+2024/01/08-16:15:46.397 602 Delete type=0 #64
+2024/01/08-16:25:09.248 602 Level-0 table #68: started
+2024/01/08-16:25:09.252 602 Level-0 table #68: 16141 bytes OK
+2024/01/08-16:25:09.254 602 Delete type=0 #65

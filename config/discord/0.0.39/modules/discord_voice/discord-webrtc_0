@@ -1,0 +1,615 @@
+[2024-01-08 16:12:08.969] [1662] (engine.cpp:467): Created native Engine, time: Mon Jan  8 16:12:08 2024 MST, logPath: /home/glandry/.config/discord/0.0.39/modules/discord_voice/, logLevel: 2
+[2024-01-08 16:12:08.975] [1662] (audio_processing_impl.cc:295): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2024-01-08 16:12:08.975] [1662] (audio_processing_impl.cc:304): Denormal disabler: supported
+[2024-01-08 16:12:08.976] [1662] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[2024-01-08 16:12:08.977] [1662] (audio_device_buffer.cc:66): AudioDeviceBuffer::ctor
+[2024-01-08 16:12:08.977] [1662] (audio_device_impl.cc:143): current platform is Linux
+[2024-01-08 16:12:08.977] [1662] (audio_device_impl.cc:162): CreatePlatformSpecificObjects
+[2024-01-08 16:12:08.977] [1662] (audio_device_impl.cc:991): PlatformAudioLayer
+[2024-01-08 16:12:08.977] [1662] (audio_device_impl.cc:298): PulseAudio support is enabled.
+[2024-01-08 16:12:08.977] [1662] (audio_device_impl.cc:303): Linux PulseAudio APIs will be utilized
+[2024-01-08 16:12:08.977] [1662] (audio_device_impl.cc:344): AttachAudioBuffer
+[2024-01-08 16:12:08.977] [1662] (audio_device_buffer.cc:183): SetRecordingSampleRate(0)
+[2024-01-08 16:12:08.977] [1662] (audio_device_buffer.cc:189): SetPlayoutSampleRate(0)
+[2024-01-08 16:12:08.977] [1662] (audio_device_buffer.cc:203): SetRecordingChannels(0)
+[2024-01-08 16:12:08.977] [1662] (audio_device_buffer.cc:209): SetPlayoutChannels(0)
+[2024-01-08 16:12:08.977] [1662] (audio_device_impl.cc:354): ActiveAudioLayer
+[2024-01-08 16:12:08.977] [1662] (audio_device_buffer.cc:66): AudioDeviceBuffer::ctor
+[2024-01-08 16:12:08.977] [1662] (audio_device_impl.cc:143): current platform is Linux
+[2024-01-08 16:12:08.977] [1662] (audio_device_impl.cc:162): CreatePlatformSpecificObjects
+[2024-01-08 16:12:08.977] [1662] (audio_device_impl.cc:991): PlatformAudioLayer
+[2024-01-08 16:12:08.977] [1662] (audio_device_impl.cc:298): PulseAudio support is enabled.
+[2024-01-08 16:12:08.977] [1662] (audio_device_impl.cc:303): Linux PulseAudio APIs will be utilized
+[2024-01-08 16:12:08.977] [1662] (audio_device_impl.cc:344): AttachAudioBuffer
+[2024-01-08 16:12:08.977] [1662] (audio_device_buffer.cc:183): SetRecordingSampleRate(0)
+[2024-01-08 16:12:08.977] [1662] (audio_device_buffer.cc:189): SetPlayoutSampleRate(0)
+[2024-01-08 16:12:08.977] [1662] (audio_device_buffer.cc:203): SetRecordingChannels(0)
+[2024-01-08 16:12:08.977] [1662] (audio_device_buffer.cc:209): SetPlayoutChannels(0)
+[2024-01-08 16:12:08.977] [1662] (audio_processing_impl.cc:295): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2024-01-08 16:12:08.977] [1662] (audio_processing_impl.cc:304): Denormal disabler: supported
+[2024-01-08 16:12:08.977] [1662] (audio_engine.cpp:400): Creating audio engine: standard
+[2024-01-08 16:12:08.977] [1662] (audio_device_impl.cc:364): Init
+[2024-01-08 16:12:08.992] [1662] (audio_device_impl.cc:364): Init
+[2024-01-08 16:12:08.997] [1662] (audio_coding.cpp:149): Using software Opus decoder
+[2024-01-08 16:12:08.997] [1662] (audio_coding.cpp:166): Using software Opus encoder
+[2024-01-08 16:12:08.997] [1662] (audio_device_impl.cc:895): RegisterAudioCallback
+[2024-01-08 16:12:08.997] [1662] (audio_device_impl.cc:547): SetMicrophoneVolume(100)
+[2024-01-08 16:12:08.997] [1662] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-01-08 16:12:08.997] [1662] (audio_device_impl.cc:895): RegisterAudioCallback
+[2024-01-08 16:12:08.997] [1662] (audio_engine.cpp:151): Setting audio input device: 'default'
+[2024-01-08 16:12:08.997] [1662] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-01-08 16:12:08.997] [1662] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2024-01-08 16:12:08.997] [1662] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-01-08 16:12:08.997] [1662] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-01-08 16:12:08.998] [1662] (audio_device_impl.cc:573): output: 1
+[2024-01-08 16:12:08.998] [1662] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-01-08 16:12:08.998] [1662] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2024-01-08 16:12:08.998] [1662] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-01-08 16:12:08.998] [1662] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-01-08 16:12:08.998] [1662] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-01-08 16:12:08.998] [1662] (audio_engine.cpp:168): Setting audio output device: 'default'
+[2024-01-08 16:12:08.998] [1662] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-01-08 16:12:08.998] [1662] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-01-08 16:12:08.999] [1662] (audio_device_impl.cc:619): output: 1
+[2024-01-08 16:12:08.999] [1662] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-01-08 16:12:08.999] [1662] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2024-01-08 16:12:08.999] [1662] (audio_device_impl.cc:911): BuiltInAECIsAvailable
+[2024-01-08 16:12:08.999] [1662] (audio_device_generic.cc:32): BuiltInAECIsAvailable: Not supported on this platform
+[2024-01-08 16:12:08.999] [1662] (audio_device_impl.cc:914): output: 0
+[2024-01-08 16:12:08.999] [1662] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[2024-01-08 16:12:09.000] [1662] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
+[2024-01-08 16:12:09.000] [1662] (echo_canceller3.cc:793): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
+[2024-01-08 16:12:09.000] [1662] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[2024-01-08 16:12:09.000] [1662] (clipping_predictor.cc:357): [agc] Clipping prediction disabled.
+[2024-01-08 16:12:09.000] [1662] (agc_manager_direct.cc:500): [agc] analog controller enabled: yes
+[2024-01-08 16:12:09.000] [1662] (agc_manager_direct.cc:503): [agc] Min mic level: 12 (overridden: no)
+[2024-01-08 16:12:09.000] [1662] (agc_manager_direct.cc:507): [agc] Startup min volume: 0
+[2024-01-08 16:12:09.000] [1662] (captured_audio_processor.cpp:115): SetNoiseCancellation: 0
+[2024-01-08 16:12:09.000] [1662] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[2024-01-08 16:12:09.000] [1662] (field_trial.cc:141): Setting field trial string:WebRTC-Audio-NetEqDecisionLogicConfig/reinit_after_expands:100/
+[2024-01-08 16:12:09.302] [1662] (audio_engine.cpp:151): Setting audio input device: 'default'
+[2024-01-08 16:12:09.302] [1662] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-01-08 16:12:09.302] [1662] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-01-08 16:12:09.302] [1662] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2024-01-08 16:12:09.302] [1662] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-01-08 16:12:09.302] [1662] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-01-08 16:12:09.303] [1662] (audio_device_impl.cc:573): output: 1
+[2024-01-08 16:12:09.303] [1662] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-01-08 16:12:09.303] [1662] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2024-01-08 16:12:09.303] [1662] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-01-08 16:12:09.303] [1662] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-01-08 16:12:09.303] [1662] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-01-08 16:12:09.303] [1662] (audio_engine.cpp:168): Setting audio output device: 'default'
+[2024-01-08 16:12:09.303] [1662] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-01-08 16:12:09.303] [1662] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-01-08 16:12:09.303] [1662] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-01-08 16:12:09.304] [1662] (audio_device_impl.cc:619): output: 1
+[2024-01-08 16:12:09.304] [1662] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-01-08 16:12:09.304] [1662] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2024-01-08 16:12:09.304] [1662] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-01-08 16:12:09.304] [1662] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-01-08 16:12:09.304] [1662] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-01-08 16:12:09.312] [1626] (discord.cpp:763): JS console: ["%c[default]","[BUILD INFO] Release Channel: stable, Build Number: 257959, Version Hash: 6a4a3a2950a8a144012034fd47e8d463c18d4142"]
+[2024-01-08 16:12:09.482] [1626] (discord.cpp:763): JS console: ["%c[CloudSyncUtils]","CloudSync is not supported on this platform"]
+[2024-01-08 16:12:09.592] [1626] (discord.cpp:763): JS console: ["%c[default]","[NATIVE INFO] host 0.0.39, modules: discord_desktop_core: 1, discord_erlpack: 1, discord_spellcheck: 1, discord_utils: 1, discord_voice: 1, discord_krisp: 1, discord_game_utils: 1, discord_rpc: 1, build: null"]
+[2024-01-08 16:12:09.703] [1662] (audio_engine.cpp:151): Setting audio input device: 'default'
+[2024-01-08 16:12:09.703] [1662] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-01-08 16:12:09.703] [1662] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-01-08 16:12:09.703] [1662] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2024-01-08 16:12:09.703] [1662] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-01-08 16:12:09.703] [1662] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-01-08 16:12:09.704] [1662] (audio_device_impl.cc:573): output: 1
+[2024-01-08 16:12:09.704] [1662] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-01-08 16:12:09.704] [1662] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2024-01-08 16:12:09.704] [1662] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-01-08 16:12:09.704] [1662] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-01-08 16:12:09.704] [1662] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-01-08 16:12:09.704] [1662] (audio_engine.cpp:168): Setting audio output device: 'default'
+[2024-01-08 16:12:09.704] [1662] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-01-08 16:12:09.704] [1662] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-01-08 16:12:09.705] [1662] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-01-08 16:12:09.706] [1662] (audio_device_impl.cc:619): output: 1
+[2024-01-08 16:12:09.706] [1662] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-01-08 16:12:09.706] [1662] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2024-01-08 16:12:09.722] [1626] (discord.cpp:763): JS console: ["Initializing krisp module"]
+[2024-01-08 16:12:10.489] [1626] (discord.cpp:763): JS console: ["%c[Spellchecker]","sh is not a valid locale."]
+[2024-01-08 16:12:10.696] [1626] (discord.cpp:763): JS console: ["%c[Spellchecker]","Switching to en-US","(available)"]
+[2024-01-08 16:12:11.711] [1626] (discord.cpp:763): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2024-01-08 16:12:11.856] [1626] (discord.cpp:763): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-01-08 16:12:11.857] [1626] (discord.cpp:763): JS console: ["%c[GatewaySocket]","[FAST CONNECT] successfully took over websocket, state:","[object Object]"]
+[2024-01-08 16:12:11.857] [1626] (discord.cpp:763): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 1 ms"]
+[2024-01-08 16:12:12.013] [1626] (discord.cpp:763): JS console: ["%c[RPCServer:WSS]","Starting on 6463"]
+[2024-01-08 16:12:12.023] [1626] (discord.cpp:763): JS console: ["%c[RPCServer:IPC]","Starting on /run/user/1000/discord-ipc-0"]
+[2024-01-08 16:12:13.435] [1626] (discord.cpp:763): JS console: ["%c[GatewaySocket]","[READY] took 1578ms, as fe9a096167521c3c076fe71a50be5680"]
+[2024-01-08 16:12:13.499] [1626] (discord.cpp:763): JS console: ["%c[Flux]","Dispatching CONNECTION_OPEN"]
+[2024-01-08 16:12:13.502] [1626] (discord.cpp:763): JS console: ["%c[DatabaseManager]","removing database (user: 174341917822156801, database: undefined)"]
+[2024-01-08 16:12:13.523] [1626] (discord.cpp:763): JS console: ["%c[NativeDispatchUtils]","Tried getting Dispatch instance before instantiated"]
+[2024-01-08 16:12:13.597] [1626] (discord.cpp:763): JS console: ["%c[MessageActionCreators]","Fetching messages for 747308135139770399 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2024-01-08 16:12:13.606] [1626] (discord.cpp:763): JS console: ["%c[ConnectionStore]","Dispatched 1 messages in 145ms"]
+[2024-01-08 16:12:13.651] [1626] (discord.cpp:763): JS console: ["%c[GatewaySocket]","[READY_SUPPLEMENTAL] took 1795ms"]
+[2024-01-08 16:12:14.499] [1626] (discord.cpp:763): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 747308135139770399 isBefore:false isAfter:false"]
+[2024-01-08 16:12:18.610] [1750] (region_latency_tester.cpp:72): Sending 5 latency test pings to region seattle
+[2024-01-08 16:12:18.610] [1750] (region_latency_tester.cpp:72): Sending 5 latency test pings to region santa-clara
+[2024-01-08 16:12:18.610] [1750] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-west
+[2024-01-08 16:12:18.610] [1750] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-central
+[2024-01-08 16:12:18.610] [1750] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-south
+[2024-01-08 16:12:18.707] [1750] (region_latency_tester.cpp:271): Average RTT for region seattle is 38.25
+[2024-01-08 16:12:18.707] [1750] (region_latency_tester.cpp:271): Average RTT for region santa-clara is 52.5
+[2024-01-08 16:12:18.707] [1750] (region_latency_tester.cpp:271): Average RTT for region us-west is 64.5
+[2024-01-08 16:12:18.707] [1750] (region_latency_tester.cpp:271): Average RTT for region us-central is 62.75
+[2024-01-08 16:12:18.707] [1750] (region_latency_tester.cpp:271): Average RTT for region us-south is 95.5
+[2024-01-08 16:12:19.318] [1626] (discord.cpp:763): JS console: ["%c[MessageActionCreators]","Fetching messages for 424776117916925963 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2024-01-08 16:12:19.869] [1626] (discord.cpp:763): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 424776117916925963 isBefore:false isAfter:false"]
+[2024-01-08 16:12:20.711] [1626] (discord.cpp:763): JS console: ["%c[discord_protos.discord_users.v1.FrecencyUserSettings]","Loading proto"]
+[2024-01-08 16:12:25.694] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:2739"]
+[2024-01-08 16:12:25.695] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:2739 QueueLength: 0"]
+[2024-01-08 16:12:25.696] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:12:26.011] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:2739 QueueLength: 0"]
+[2024-01-08 16:12:37.212] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:5951"]
+[2024-01-08 16:12:37.212] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:5951 QueueLength: 0"]
+[2024-01-08 16:12:37.213] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:12:37.807] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:5951 QueueLength: 0"]
+[2024-01-08 16:12:40.594] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:1455"]
+[2024-01-08 16:12:40.595] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:1455 QueueLength: 0"]
+[2024-01-08 16:12:40.595] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:12:40.897] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:1455 QueueLength: 0"]
+[2024-01-08 16:12:53.807] [1626] (discord.cpp:763): JS console: ["%c[RPCServer:WSS]","Socket Opened: 34"]
+[2024-01-08 16:12:53.818] [1626] (discord.cpp:763): JS console: ["%c[RPCServer:WSS]","Socket Emit: 34","[object Object]"]
+[2024-01-08 16:12:53.830] [1626] (discord.cpp:763): JS console: ["%c[RPCServer:WSS]","Socket Message: 34","[object Object]"]
+[2024-01-08 16:12:54.055] [1626] (discord.cpp:763): JS console: ["%c[RPCServer:WSS]","Socket Emit: 34","[object Object]"]
+[2024-01-08 16:12:54.218] [1626] (discord.cpp:763): JS console: ["%c[RPCServer:WSS]","Socket Closed: 34, code 1005, message "]
+[2024-01-08 16:13:06.083] [1626] (discord.cpp:763): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1190084708713910272/onboarding"]
+[2024-01-08 16:13:06.109] [1626] (discord.cpp:763): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1190084708713910272/onboarding"]
+[2024-01-08 16:14:07.810] [1626] (discord.cpp:763): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1190084708713910272/@home"]
+[2024-01-08 16:14:29.581] [1626] (discord.cpp:763): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1190084708713910272/customize-community"]
+[2024-01-08 16:14:46.020] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:1474"]
+[2024-01-08 16:14:46.027] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:1474 QueueLength: 0"]
+[2024-01-08 16:14:46.028] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:14:46.329] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:1474 QueueLength: 0"]
+[2024-01-08 16:15:14.708] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:2205"]
+[2024-01-08 16:15:14.709] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:2205 QueueLength: 0"]
+[2024-01-08 16:15:14.709] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:15:15.044] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:2205 QueueLength: 0"]
+[2024-01-08 16:15:58.564] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:456"]
+[2024-01-08 16:15:58.564] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:456 QueueLength: 0"]
+[2024-01-08 16:15:58.565] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:15:58.846] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:456 QueueLength: 0"]
+[2024-01-08 16:16:04.634] [1626] (discord.cpp:763): JS console: ["%c[MessageActionCreators]","Fetching messages for 613169357010501633 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2024-01-08 16:16:05.019] [1626] (discord.cpp:763): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 613169357010501633 isBefore:false isAfter:false"]
+[2024-01-08 16:17:06.784] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:5760"]
+[2024-01-08 16:17:06.787] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:5760 QueueLength: 0"]
+[2024-01-08 16:17:06.788] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:17:07.222] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:5760 QueueLength: 0"]
+[2024-01-08 16:17:24.621] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:1170"]
+[2024-01-08 16:17:24.622] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:1170 QueueLength: 0"]
+[2024-01-08 16:17:24.622] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:17:24.898] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:1170 QueueLength: 0"]
+[2024-01-08 16:17:57.362] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:9243"]
+[2024-01-08 16:17:57.362] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:9243 QueueLength: 0"]
+[2024-01-08 16:17:57.363] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:17:57.820] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:9243 QueueLength: 0"]
+[2024-01-08 16:17:58.609] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:1230"]
+[2024-01-08 16:17:58.609] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:1230 QueueLength: 0"]
+[2024-01-08 16:17:58.609] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:17:58.941] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:1230 QueueLength: 0"]
+[2024-01-08 16:18:19.147] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:9055"]
+[2024-01-08 16:18:19.148] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:9055 QueueLength: 0"]
+[2024-01-08 16:18:19.148] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:18:19.376] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:9055 QueueLength: 0"]
+[2024-01-08 16:18:58.567] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:2479"]
+[2024-01-08 16:18:58.568] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:2479 QueueLength: 0"]
+[2024-01-08 16:18:58.568] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:18:58.844] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:2479 QueueLength: 0"]
+[2024-01-08 16:19:22.629] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:4600"]
+[2024-01-08 16:19:22.630] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:4600 QueueLength: 0"]
+[2024-01-08 16:19:22.630] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:19:23.011] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:4600 QueueLength: 0"]
+[2024-01-08 16:19:40.977] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:9844"]
+[2024-01-08 16:19:40.978] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:9844 QueueLength: 0"]
+[2024-01-08 16:19:40.979] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:19:41.546] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:9844 QueueLength: 0"]
+[2024-01-08 16:19:54.595] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:5838"]
+[2024-01-08 16:19:54.595] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:5838 QueueLength: 0"]
+[2024-01-08 16:19:54.595] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:19:54.973] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:5838 QueueLength: 0"]
+[2024-01-08 16:21:49.903] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:994"]
+[2024-01-08 16:21:49.903] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:994 QueueLength: 0"]
+[2024-01-08 16:21:49.904] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:21:50.461] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:994 QueueLength: 0"]
+[2024-01-08 16:22:03.905] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:1112"]
+[2024-01-08 16:22:03.905] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:1112 QueueLength: 0"]
+[2024-01-08 16:22:03.906] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:22:04.288] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:1112 QueueLength: 0"]
+[2024-01-08 16:22:13.470] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:4962"]
+[2024-01-08 16:22:13.470] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:4962 QueueLength: 0"]
+[2024-01-08 16:22:13.471] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:22:13.715] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:4962 QueueLength: 0"]
+[2024-01-08 16:22:15.539] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:7400"]
+[2024-01-08 16:22:15.539] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:7400 QueueLength: 0"]
+[2024-01-08 16:22:15.539] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:22:15.849] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:7400 QueueLength: 0"]
+[2024-01-08 16:23:21.977] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:1637"]
+[2024-01-08 16:23:21.977] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:1637 QueueLength: 0"]
+[2024-01-08 16:23:21.978] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:23:22.321] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:1637 QueueLength: 0"]
+[2024-01-08 16:23:36.821] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:6119"]
+[2024-01-08 16:23:36.821] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:6119 QueueLength: 0"]
+[2024-01-08 16:23:36.821] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:23:37.153] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:6119 QueueLength: 0"]
+[2024-01-08 16:23:40.946] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:7446"]
+[2024-01-08 16:23:40.946] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:7446 QueueLength: 0"]
+[2024-01-08 16:23:40.946] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:23:41.251] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:7446 QueueLength: 0"]
+[2024-01-08 16:23:50.210] [1626] (discord.cpp:763): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2024-01-08 16:23:50.292] [1626] (discord.cpp:763): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2024-01-08 16:23:50.292] [1626] (discord.cpp:763): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2024-01-08 16:23:50.292] [1626] (discord.cpp:763): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2024-01-08 16:23:50.292] [1626] (discord.cpp:763): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2024-01-08 16:23:50.292] [1626] (discord.cpp:763): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2024-01-08 16:24:03.164] [1626] (discord.cpp:763): JS console: ["%c[MessageActionCreators]","Fetching messages for 1190087852290216027 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2024-01-08 16:24:03.319] [1626] (discord.cpp:763): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1190084708713910272/1190087852290216027"]
+[2024-01-08 16:24:03.694] [1626] (discord.cpp:763): JS console: ["%c[MessageActionCreators]","Fetched 2 messages for 1190087852290216027 isBefore:false isAfter:false"]
+[2024-01-08 16:25:04.304] [1626] (discord.cpp:763): JS console: ["%c[MessageActionCreators]","Fetching messages for 436744219558805504 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2024-01-08 16:25:04.735] [1626] (discord.cpp:763): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 436744219558805504 isBefore:false isAfter:false"]
+[2024-01-08 16:25:17.288] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:2592"]
+[2024-01-08 16:25:17.296] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:2592 QueueLength: 0"]
+[2024-01-08 16:25:17.296] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:25:17.719] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:2592 QueueLength: 0"]
+[2024-01-08 16:25:29.047] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:3497"]
+[2024-01-08 16:25:29.047] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:3497 QueueLength: 0"]
+[2024-01-08 16:25:29.047] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:25:29.381] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:3497 QueueLength: 0"]
+[2024-01-08 16:26:21.302] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:7299"]
+[2024-01-08 16:26:21.303] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:7299 QueueLength: 0"]
+[2024-01-08 16:26:21.303] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:26:21.604] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:7299 QueueLength: 0"]
+[2024-01-08 16:40:22.482] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:3158"]
+[2024-01-08 16:40:22.496] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:3158 QueueLength: 0"]
+[2024-01-08 16:40:22.497] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:40:22.934] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:3158 QueueLength: 0"]
+[2024-01-08 16:40:39.248] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:920"]
+[2024-01-08 16:40:39.248] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:920 QueueLength: 0"]
+[2024-01-08 16:40:39.249] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:40:39.573] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:920 QueueLength: 0"]
+[2024-01-08 16:40:48.053] [1626] (discord.cpp:763): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2024-01-08 16:40:48.160] [1626] (discord.cpp:763): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2024-01-08 16:40:48.161] [1626] (discord.cpp:763): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2024-01-08 16:40:48.161] [1626] (discord.cpp:763): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2024-01-08 16:40:48.161] [1626] (discord.cpp:763): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2024-01-08 16:40:49.842] [1626] (discord.cpp:763): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2024-01-08 16:40:49.842] [1626] (discord.cpp:763): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2024-01-08 16:40:49.842] [1626] (discord.cpp:763): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2024-01-08 16:40:49.843] [1626] (discord.cpp:763): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2024-01-08 16:40:49.843] [1626] (discord.cpp:763): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2024-01-08 16:40:49.843] [1626] (discord.cpp:763): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2024-01-08 16:40:49.843] [1626] (discord.cpp:763): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2024-01-08 16:40:50.033] [1626] (discord.cpp:763): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2024-01-08 16:40:50.034] [1626] (discord.cpp:763): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2024-01-08 16:40:50.034] [1626] (discord.cpp:763): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2024-01-08 16:40:50.108] [1626] (discord.cpp:763): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2024-01-08 16:40:52.937] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:5926"]
+[2024-01-08 16:40:52.938] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:5926 QueueLength: 0"]
+[2024-01-08 16:40:52.938] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:40:53.400] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:5926 QueueLength: 0"]
+[2024-01-08 16:41:41.200] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:8092"]
+[2024-01-08 16:41:41.208] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:8092 QueueLength: 0"]
+[2024-01-08 16:41:41.209] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:41:41.501] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:8092 QueueLength: 0"]
+[2024-01-08 16:41:44.327] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:8606"]
+[2024-01-08 16:41:44.327] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:8606 QueueLength: 0"]
+[2024-01-08 16:41:44.327] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:41:44.569] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:8606 QueueLength: 0"]
+[2024-01-08 16:41:46.803] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:3950"]
+[2024-01-08 16:41:46.803] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:3950 QueueLength: 0"]
+[2024-01-08 16:41:46.803] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:41:47.120] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:3950 QueueLength: 0"]
+[2024-01-08 16:42:04.942] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:2246"]
+[2024-01-08 16:42:04.943] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:2246 QueueLength: 0"]
+[2024-01-08 16:42:04.943] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:42:05.220] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:2246 QueueLength: 0"]
+[2024-01-08 16:48:38.263] [1626] (discord.cpp:763): JS console: ["%c[ConnectionStore]","Dispatched 1 messages in 112ms"]
+[2024-01-08 16:55:53.319] [1626] (discord.cpp:763): JS console: ["%c[ConnectionStore]","Dispatched 1 messages in 112ms"]
+[2024-01-08 16:56:52.832] [1626] (discord.cpp:763): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/747308134401573007/747308135139770399"]
+[2024-01-08 16:58:41.871] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:7731"]
+[2024-01-08 16:58:41.877] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:7731 QueueLength: 0"]
+[2024-01-08 16:58:41.878] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:58:42.317] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:7731 QueueLength: 0"]
+[2024-01-08 16:59:00.549] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:6652"]
+[2024-01-08 16:59:00.549] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:6652 QueueLength: 0"]
+[2024-01-08 16:59:00.550] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 16:59:00.860] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:6652 QueueLength: 0"]
+[2024-01-08 17:12:53.020] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:491"]
+[2024-01-08 17:12:53.032] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:491 QueueLength: 0"]
+[2024-01-08 17:12:53.032] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 17:12:53.346] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:491 QueueLength: 0"]
+[2024-01-08 17:12:54.952] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:2268"]
+[2024-01-08 17:12:54.953] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:2268 QueueLength: 0"]
+[2024-01-08 17:12:54.954] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 17:12:55.388] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:2268 QueueLength: 0"]
+[2024-01-08 17:13:05.801] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:7652"]
+[2024-01-08 17:13:05.801] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:7652 QueueLength: 0"]
+[2024-01-08 17:13:05.802] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2024-01-08 17:13:06.135] [1626] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:7652 QueueLength: 0"]
+[2024-01-08 17:13:12.293] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.293] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.294] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.294] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.294] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.294] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.295] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.295] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.295] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.295] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.295] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.296] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.296] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.296] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.296] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.296] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.297] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.297] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.297] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.297] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.297] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.298] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.298] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.298] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.298] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.299] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.299] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.299] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.299] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.300] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.300] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.300] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.300] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.300] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.301] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.301] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.301] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.302] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.302] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.302] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.302] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.302] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.303] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.303] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.303] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.303] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.303] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.304] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.304] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.304] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.304] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.304] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.305] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.305] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.305] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.305] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.305] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.305] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.306] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.306] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.306] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.306] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.306] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.307] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.307] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.307] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.307] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.307] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.307] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.308] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.308] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.308] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.308] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.308] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.309] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.309] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.309] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.309] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.309] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.310] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.310] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.310] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.310] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.310] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.311] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.311] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.311] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.311] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.311] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.311] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.312] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.312] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.312] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.312] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.312] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.313] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.313] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.313] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.313] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.313] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.314] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.314] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.314] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.314] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.314] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.314] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.315] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.315] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.315] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.315] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.315] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.316] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.316] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.316] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.316] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.317] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.317] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.317] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.317] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.318] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.318] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.318] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.318] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.319] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.319] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.319] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.320] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.320] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.320] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.320] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.321] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.321] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.321] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.322] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.322] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.322] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.322] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.323] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.323] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.323] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.323] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.323] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.324] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.324] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.324] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.324] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.324] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.324] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.325] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.325] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.325] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.325] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.325] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.326] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.326] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.326] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.326] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.326] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.327] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.327] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.327] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.327] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.327] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.327] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.328] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.328] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.328] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.328] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.328] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.329] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.329] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.329] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.329] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.329] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.330] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.330] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.330] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.330] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.330] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.330] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.331] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.331] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.331] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.331] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.331] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.332] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.332] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.332] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.332] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.332] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.332] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.333] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.333] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.333] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.333] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.333] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.334] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.334] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.334] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.334] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.334] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.334] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.335] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.335] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.335] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.335] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.335] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.336] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.336] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.336] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.336] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.336] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.337] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.337] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.337] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.337] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.337] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.337] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.338] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.338] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.338] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.338] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.338] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.339] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.339] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.339] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.339] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.339] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.340] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.340] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.340] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.340] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.340] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.340] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.341] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.341] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.341] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.341] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.341] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.342] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.342] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.342] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.342] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.342] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.342] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.343] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.343] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.343] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.343] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.343] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.344] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.344] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.344] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.344] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.344] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.344] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.345] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.345] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.345] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.345] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.345] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.346] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.346] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.346] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.346] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.346] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.347] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.347] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.347] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.348] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.349] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.350] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2024-01-08 17:13:12.350] [1626] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]

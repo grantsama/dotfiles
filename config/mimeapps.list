@@ -1,0 +1,4 @@
+[Added Associations]
+image/png=org.gnome.gThumb.desktop;feh.desktop;
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
+image/jpeg=org.gnome.gThumb.desktop;

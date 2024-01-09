@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/glandry/Downloads" added="2024-01-08T23:47:38.514880Z" modified="2024-01-08T23:47:38.514890Z" visited="2024-01-08T23:47:38.514881Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2024-01-08T23:47:38.514885Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/glandry" added="2024-01-08T23:47:38.514893Z" modified="2024-01-08T23:47:38.514897Z" visited="2024-01-08T23:47:38.514893Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2024-01-08T23:47:38.514895Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/glandry/.config/i3" added="2024-01-08T23:47:38.514899Z" modified="2024-01-08T23:47:38.514906Z" visited="2024-01-08T23:47:38.514899Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2024-01-08T23:47:38.514904Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/glandry/Pictures" added="2024-01-08T23:47:38.514908Z" modified="2024-01-08T23:47:38.514913Z" visited="2024-01-08T23:47:38.514908Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2024-01-08T23:47:38.514910Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/glandry/Downloads/gruvbox-wallpapers/wallpapers/minimalistic" added="2024-01-08T23:47:38.514917Z" modified="2024-01-08T23:47:38.514921Z" visited="2024-01-08T23:47:38.514917Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2024-01-08T23:47:38.514919Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/glandry/Downloads/gruvbox-wallpapers/wallpapers/light" added="2024-01-08T23:47:38.514925Z" modified="2024-01-08T23:47:38.514932Z" visited="2024-01-08T23:47:38.514925Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2024-01-08T23:47:38.514928Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/glandry/Downloads/gruvbox-wallpapers/wallpapers/anime" added="2024-01-08T23:47:38.514935Z" modified="2024-01-08T23:47:38.514941Z" visited="2024-01-08T23:47:38.514935Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2024-01-08T23:47:38.514938Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>
